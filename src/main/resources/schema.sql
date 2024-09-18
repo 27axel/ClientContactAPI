@@ -8,5 +8,5 @@ CREATE TABLE contact (
     client_id BIGINT NOT NULL,
     contact_type ENUM('PHONE', 'EMAIL') NOT NULL,
     contact_value VARCHAR(255) NOT NULL,
-    FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
+    FOREIGN KEY (client_id) REFERENCES client(id) ON DELETE CASCADE
 );
