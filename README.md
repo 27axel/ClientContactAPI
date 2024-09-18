@@ -33,7 +33,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-Приложение будет доступно по адресу: http://localhost:8080
+OpenAPI приложения будет доступно по адресу: http://localhost:8080/swagger-ui.html
 
 ## Доступ к консоли H2
 
