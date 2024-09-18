@@ -1,0 +1,12 @@
+CREATE TABLE client (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE contact (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    client_id BIGINT NOT NULL,
+    contact_type ENUM('PHONE', 'EMAIL') NOT NULL,
+    contact_value VARCHAR(255) NOT NULL,
+    FOREIGN KEY (client_id) REFERENCES clients(id) ON DELETE CASCADE
+);
